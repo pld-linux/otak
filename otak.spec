@@ -1,7 +1,7 @@
 Summary:	Visual interface to programs
 Summary(pl):	Tekstowy interfejs dla programów
 Name:		otak
-Version:	1.2.2
+Version:	1.2.4
 Vendor:		Grzegorz Moskal <eldevarth@hoga.pl>
 Release:	1
 License:	GPL v2
