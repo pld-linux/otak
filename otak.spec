@@ -35,10 +35,7 @@ nawi±zywaæ po³±czenia z gromadzonymi hostami.
 
 %build
 %configure
-%{__make} \
-%ifnarch %{ix86}
-	CCLD="%{__cc} -lm"
-%endif
+%{__make}
 
 %install
 rm -rf $RPM_BUILD_ROOT
@@ -56,7 +53,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %files -f %{name}.lang
 %defattr(644,root,root,755)
-%doc README AUTHORS
+%doc README AUTHORS ABOUT{,-pl} BUGS-pl THANKS TODO-pl
 %attr(755,root,root) %{_bindir}/*
 %{_applnkdir}/Network/Mail/*
 %{_pixmapsdir}/*
