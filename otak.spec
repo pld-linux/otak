@@ -7,9 +7,10 @@ Release:	1
 License:	GPL v2
 Group:		Applications/Mail
 Source0:	%{name}-%{version}.tar.gz
-BuildRequires:	automake
 BuildRequires:	autoconf
+BuildRequires:	automake
 BuildRequires:	conflib-devel
+BuildRequires:	gettext-devel
 BuildRequires:	ncurses-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
