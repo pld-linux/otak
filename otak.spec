@@ -48,7 +48,7 @@ install -d $RPM_BUILD_ROOT{%{_desktopdir},%{_pixmapsdir}}
 	DESTDIR=$RPM_BUILD_ROOT
 
 install *.png $RPM_BUILD_ROOT%{_pixmapsdir}
-install *.desktop $RPM_BUILD_ROOT%{_desktopdir}/Network/Mail/
+install *.desktop $RPM_BUILD_ROOT%{_desktopdir}
 
 %clean
 rm -rf $RPM_BUILD_ROOT
