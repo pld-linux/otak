@@ -2,10 +2,13 @@ Summary:	text-based adress book
 Summary(pl):	ksi±¿ka adresowa z interfejsem textowym
 Name:		otak
 Version:	0.0.4
-Vendor:		Grzegorz Moskal <eldevarth@hoga.pl>
 Release:	1
 License:	GPL
+Vendor:		Grzegorz Moskal <eldevarth@hoga.pl>
 Group:		Applications/Mail
+Group(de):	Applikationen/Post
+Group(pl):	Aplikacje/Poczta
+Group(pt):	Aplicações/Correio Eletrônico
 Source0:	%{name}-%{version}.tar.gz
 BuildRequires:	conflib-devel
 BuildRequires:	slang-devel
@@ -13,15 +16,15 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 It is a text-based address book program. Fields describing a person
-are fully configurable, initially they are: nick, First and
-Surname, home page and phone fields, but you can add eye colour or
-whetever if you like to.
+are fully configurable, initially they are: nick, First and Surname,
+home page and phone fields, but you can add eye colour or whetever if
+you like to.
 
 %description -l pl
-Jest to ksi±¿ka adresowa z interfejsem tekstowym.  Pola opisuj±ce
-osobê s± w pe³ni konfigurowalne, pocz±tkowo zawieraj± one: 
-ksyfkê, imiê i nazwisko, stronê domowa (www) oraz telefon,
-ale mo¿esz dodaæ kolor oczu czy cokolwiek, je¶li chcesz.
+Jest to ksi±¿ka adresowa z interfejsem tekstowym. Pola opisuj±ce osobê
+s± w pe³ni konfigurowalne, pocz±tkowo zawieraj± one: ksyfkê, imiê i
+nazwisko, stronê domowa (www) oraz telefon, ale mo¿esz dodaæ kolor
+oczu czy cokolwiek, je¶li chcesz.
 
 %prep
 %setup -q
