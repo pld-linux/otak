@@ -21,14 +21,14 @@ The main idea behind otak, is to provide visual interface to programs,
 that doesn't have one, but needs to take arguments, that can be selected
 from list.  For example one can use it as an adress book program in
 connection with mutt, or as a phone-book with sms-sending software,
-or even as list of hosts to ssh or ftp to.
+or even as list of hosts to ssh or FTP to.
 
 %description -l pl
 Otak zosta³ zaprojektowany jako interfejs graficzny dla programów,
 które go nie posiadaj±, ale wymagaj± argumentu, który mo¿e byæ wybrany
 z listy. Przyk³adowo: Mo¿na powi±zaæ otak z muttem i u¿ywaæ jako
 ksi±¿ki adresowej, albo powi±zaæ go z sms-em i u¿ywaæ jako ksi±¿ki
-"smsowej", mo¿na te¿ np. powi±zaæ otaka z komend± ssh (czy ftp) i
+"smsowej", mo¿na te¿ np. powi±zaæ otaka z komend± ssh (czy FTP) i
 nawi±zywaæ po³±czenia z gromadzonymi hostami.
 
 %prep
