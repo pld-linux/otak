@@ -39,12 +39,11 @@ i nawi±zywaæ po³±czenia z gromadzonymi hostami.
 
 %install
 rm -rf $RPM_BUILD_ROOT
+install -d $RPM_BUILD_ROOT{%{_applnkdir}/Network/Mail,%{_pixmapsdir}}
+
 %{__make} install DESTDIR=$RPM_BUILD_ROOT
 
-install -d $RPM_BUILD_ROOT%{_pixmapsdir}
 install *.png $RPM_BUILD_ROOT%{_pixmapsdir}
-
-install -d $RPM_BUILD_ROOT%{_applnkdir}/Network/Mail/
 install *.desktop $RPM_BUILD_ROOT%{_applnkdir}/Network/Mail/
 
 %find_lang %{name}
@@ -56,7 +55,6 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc README AUTHORS
 %attr(755,root,root) %{_bindir}/*
-
 %{_applnkdir}/Network/Mail/*
 %{_pixmapsdir}/*
 
