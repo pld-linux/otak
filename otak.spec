@@ -1,13 +1,13 @@
 Summary:	Visual interface to programs
 Summary(pl):	Tekstowy interfejs dla programów
 Name:		otak
-Version:	1.3.1
+Version:	1.3.2
 Release:	1
 License:	GPL v2
 Vendor:		Grzegorz Moskal <g.moskal@opengroup.org>
 Group:		Applications/Mail
-# Source0-md5:	5c9e17558b02357a66792a5b9e899334
 Source0:	http://otak.k-k.pl/otak-sources/%{name}-%{version}.tar.gz
+# Source0-md5:	adb92086724002e44bcbde4a63c8450f
 URL:		http://otak.k-k.pl/
 BuildRequires:	autoconf
 BuildRequires:	automake
