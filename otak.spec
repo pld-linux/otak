@@ -56,8 +56,6 @@ install *.png $RPM_BUILD_ROOT%{_pixmapsdir}
 install -d $RPM_BUILD_ROOT%{_applnkdir}/Network/Mail/
 install *.desktop $RPM_BUILD_ROOT%{_applnkdir}/Network/Mail/
 
-gzip -9nf README AUTHORS
-
 %find_lang %{name}
 
 %clean
@@ -65,7 +63,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %files -f %{name}.lang
 %defattr(644,root,root,755)
-%doc *.gz
+%doc README AUTHORS
 %attr(755,root,root) %{_bindir}/*
 
 %{_applnkdir}/Network/Mail/*
