@@ -37,7 +37,7 @@ nawi±zywaæ po³±czenia z gromadzonymi hostami.
 %configure
 %{__make} \
 %ifnarch %{ix86}
-	LDCC="%{__cc} -lm"
+	CCLD="%{__cc} -lm"
 %endif
 
 %install
