@@ -18,7 +18,7 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 The main idea behind otak, is to provide visual interface to programs,
 that doesn't have one, but needs to take arguments, that can be selected
-from list.  For example one can use it as an adress book program in 
+from list.  For example one can use it as an adress book program in
 connection with mutt, or as a phone-book with sms-sending software,
 or even as list of hosts to ssh or ftp to.
 
