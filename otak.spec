@@ -6,9 +6,6 @@ Release:	1
 License:	GPL
 Vendor:		Grzegorz Moskal <eldevarth@hoga.pl>
 Group:		Applications/Mail
-Group(de):	Applikationen/Post
-Group(pl):	Aplikacje/Poczta
-Group(pt):	Aplicações/Correio Eletrônico
 Source0:	%{name}-%{version}.tar.gz
 BuildRequires:	conflib-devel
 BuildRequires:	slang-devel
