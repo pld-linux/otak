@@ -2,7 +2,7 @@ Summary:	Visual interface to programs
 Summary(pl):	Tekstowy interfejs dla programów
 Name:		otak
 Version:	1.3.4
-Release:	2
+Release:	3
 License:	GPL v2
 Vendor:		Grzegorz Moskal <g.moskal@opengroup.org>
 Group:		Applications/Mail
