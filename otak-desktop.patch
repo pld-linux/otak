@@ -1,8 +1,18 @@
-diff -urN otak-1.3.4.orig/otak.desktop otak-1.3.4/otak.desktop
---- otak-1.3.4.orig/otak.desktop	2004-03-27 19:17:58.000000000 +0100
-+++ otak-1.3.4/otak.desktop	2004-07-04 17:02:04.855737848 +0200
-@@ -11,3 +11,4 @@
+--- otak-1.3.4/otak.desktop.orig	Wed Jul 14 09:01:37 2004
++++ otak-1.3.4/otak.desktop	Wed Jul 14 09:06:22 2004
+@@ -4,10 +4,13 @@
+ #true name
+ Name[tn]=Hoeg
+ Comment=Visaul interface to programs.
+-Comment[pl]=Graficzny interfejs dla programów.
++Comment[pl]=Graficzny interfejs dla programÃ³w.
+ #Earthsea
+ Comment[tn]=Nam Hietha arw Hoeg 
+ Exec=otak
  Icon=otak.png
- Terminal=1
+-Terminal=1
++Terminal=true
  Type=Application
 +Categories=ConsoleOnly;Utility;
++Encoding=UTF-8
++# vi: encoding=utf-8
