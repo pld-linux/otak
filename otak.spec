@@ -8,6 +8,7 @@ Vendor:		Grzegorz Moskal <g.moskal@opengroup.org>
 Group:		Applications/Mail
 Source0:	http://otak.k-k.pl/tgz/%{name}-%{version}.tar.gz
 # Source0-md5:	1f11039b70a20db4edf0a5c1e6819f48
+Patch0:		%{name}-desktop.patch
 URL:		http://otak.k-k.pl/
 BuildRequires:	autoconf
 BuildRequires:	automake
@@ -32,6 +33,7 @@ nawi±zywaæ po³±czenia z gromadzonymi hostami.
 
 %prep
 %setup -q
+%patch0 -q
 
 %build
 cp -f /usr/share/automake/config.sub .
