@@ -33,7 +33,7 @@ nawi±zywaæ po³±czenia z gromadzonymi hostami.
 
 %prep
 %setup -q
-%patch0 -q
+%patch0 -p1
 
 %build
 cp -f /usr/share/automake/config.sub .
