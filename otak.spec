@@ -6,7 +6,8 @@ Vendor:		Grzegorz Moskal <eldevarth@hoga.pl>
 Release:	1
 License:	GPL v2
 Group:		Applications/Mail
-Source0:	%{name}-%{version}.tar.gz
+Source0:	http://otak.k-k.pl/otak-sources/%{name}-%{version}.tar.gz
+URL:		http://otak.k-k.pl/
 BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	conflib-devel
