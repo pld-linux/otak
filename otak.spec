@@ -35,7 +35,10 @@ i nawi±zywaæ po³±czenia z gromadzonymi hostami.
 
 %build
 %configure
-%{__make}
+%{__make} \
+%ifnarch %{ix86}
+	LDCC="gcc -lm"
+%endif
 
 %install
 rm -rf $RPM_BUILD_ROOT
