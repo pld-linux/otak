@@ -7,6 +7,7 @@ License:	GPL v2
 Vendor:		Grzegorz Moskal <g.moskal@opengroup.org>
 Group:		Applications/Mail
 Source0:	http://otak.k-k.pl/otak-sources/%{name}-%{version}.tar.gz
+# Source0-md5:	5c9e17558b02357a66792a5b9e899334
 URL:		http://otak.k-k.pl/
 BuildRequires:	autoconf
 BuildRequires:	automake
