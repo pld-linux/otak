@@ -2,7 +2,7 @@ Summary:	Visual interface to programs
 Summary(pl):	Tekstowy interfejs dla programów
 Name:		otak
 Version:	1.3.4
-Release:	1
+Release:	2
 License:	GPL v2
 Vendor:		Grzegorz Moskal <g.moskal@opengroup.org>
 Group:		Applications/Mail
@@ -42,13 +42,13 @@ cp -f /usr/share/automake/config.sub .
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT{%{_applnkdir}/Network/Mail,%{_pixmapsdir}}
+install -d $RPM_BUILD_ROOT{%{_desktopdir},%{_pixmapsdir}}
 
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
 
 install *.png $RPM_BUILD_ROOT%{_pixmapsdir}
-install *.desktop $RPM_BUILD_ROOT%{_applnkdir}/Network/Mail/
+install *.desktop $RPM_BUILD_ROOT%{_desktopdir}/Network/Mail/
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -57,7 +57,7 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc README AUTHORS ABOUT{,-pl} BUGS-pl THANKS TODO-pl NEWS
 %attr(755,root,root) %{_bindir}/*
-%{_applnkdir}/Network/Mail/*
+%{_desktopdir}/*
 %{_pixmapsdir}/*
 %{_mandir}/man*/*.*
 %lang(pl) %{_mandir}/pl/man*/*.*
