@@ -3,7 +3,7 @@ Summary(pl):	Tekstowy interfejs dla programów
 Name:		otak
 Version:	1.2.4
 Vendor:		Grzegorz Moskal <eldevarth@hoga.pl>
-Release:	1
+Release:	2
 License:	GPL v2
 Group:		Applications/Mail
 Source0:	http://otak.k-k.pl/otak-sources/%{name}-%{version}.tar.gz
@@ -25,10 +25,10 @@ or even as list of hosts to ssh or ftp to.
 %description -l pl
 Otak zosta³ zaprojektowany jako interfejs graficzny dla programów,
 które go nie posiadaj±, ale wymagaj± argumentu, który mo¿e byæ wybrany
-z listy. Przyk³adowo : Mo¿na powi±zaæ otak z mutt`em i u¿ywaæ jako
-ksi±¿ki adresowej, albo powi±zaæ go z sms`em i u¿ywaæ jako 
-ksi±¿ki "smsowej", mo¿na te¿ np. powi±zaæ otaka z komend± ssh (czy ftp)
-i nawi±zywaæ po³±czenia z gromadzonymi hostami.
+z listy. Przyk³adowo: Mo¿na powi±zaæ otak z muttem i u¿ywaæ jako
+ksi±¿ki adresowej, albo powi±zaæ go z sms-em i u¿ywaæ jako ksi±¿ki
+"smsowej", mo¿na te¿ np. powi±zaæ otaka z komend± ssh (czy ftp) i
+nawi±zywaæ po³±czenia z gromadzonymi hostami.
 
 %prep
 %setup -q
@@ -37,7 +37,7 @@ i nawi±zywaæ po³±czenia z gromadzonymi hostami.
 %configure
 %{__make} \
 %ifnarch %{ix86}
-	LDCC="gcc -lm"
+	LDCC="%{__cc} -lm"
 %endif
 
 %install
