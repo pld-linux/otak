@@ -1,7 +1,7 @@
 Summary:	Visual interface to programs
 Summary(pl):	Tekstowy interfejs dla programów
 Name:		otak
-Version:	1.2.20
+Version:	1.3.0
 Release:	1
 License:	GPL v2
 Vendor:		Grzegorz Moskal <g.moskal@opengroup.org>
@@ -10,7 +10,6 @@ Source0:	http://otak.k-k.pl/otak-sources/%{name}-%{version}.tar.gz
 URL:		http://otak.k-k.pl/
 BuildRequires:	autoconf
 BuildRequires:	automake
-BuildRequires:	conflib-devel
 BuildRequires:	gettext-devel
 BuildRequires:	ncurses-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -53,7 +52,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %files -f %{name}.lang
 %defattr(644,root,root,755)
-%doc README AUTHORS ABOUT{,-pl} BUGS-pl THANKS TODO-pl
+%doc README AUTHORS ABOUT{,-pl} BUGS-pl THANKS TODO-pl NEWS
 %attr(755,root,root) %{_bindir}/*
 %{_applnkdir}/Network/Mail/*
 %{_pixmapsdir}/*
