@@ -34,6 +34,7 @@ nawi±zywaæ po³±czenia z gromadzonymi hostami.
 %setup -q
 
 %build
+cp -f /usr/share/automake/config.sub .
 %configure
 %{__make}
 
