@@ -1,13 +1,13 @@
 Summary:	Visual interface to programs
 Summary(pl):	Tekstowy interfejs dla programów
 Name:		otak
-Version:	1.3.3
+Version:	1.3.4
 Release:	1
 License:	GPL v2
 Vendor:		Grzegorz Moskal <g.moskal@opengroup.org>
 Group:		Applications/Mail
 Source0:	http://otak.k-k.pl/tgz/%{name}-%{version}.tar.gz
-# Source0-md5:	cd8f8e63566aa0e1168a0d948561f3c3
+# Source0-md5:	1f11039b70a20db4edf0a5c1e6819f48
 URL:		http://otak.k-k.pl/
 BuildRequires:	autoconf
 BuildRequires:	automake
@@ -41,25 +41,22 @@ nawi±zywaæ po³±czenia z gromadzonymi hostami.
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT{%{_applnkdir}/Network/Mail,%{_pixmapsdir}}
 
-%{__make} install DESTDIR=$RPM_BUILD_ROOT
+%{__make} install \
+	DESTDIR=$RPM_BUILD_ROOT
 
 install *.png $RPM_BUILD_ROOT%{_pixmapsdir}
 install *.desktop $RPM_BUILD_ROOT%{_applnkdir}/Network/Mail/
 
-%find_lang %{name}
-
 %clean
 rm -rf $RPM_BUILD_ROOT
 
-%files -f %{name}.lang
+%files 
 %defattr(644,root,root,755)
 %doc README AUTHORS ABOUT{,-pl} BUGS-pl THANKS TODO-pl NEWS
 %attr(755,root,root) %{_bindir}/*
 %{_applnkdir}/Network/Mail/*
 %{_pixmapsdir}/*
-
 %{_mandir}/man*/*.*
 %lang(pl) %{_mandir}/pl/man*/*.*
-
 %dir %{_sysconfdir}/%{name}
 %config(noreplace) %verify(not md5 size mtime) %{_sysconfdir}/%{name}/*
