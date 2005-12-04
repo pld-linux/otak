@@ -18,10 +18,10 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 The main idea behind otak, is to provide visual interface to programs,
-that doesn't have one, but needs to take arguments, that can be selected
-from list.  For example one can use it as an adress book program in
-connection with mutt, or as a phone-book with sms-sending software,
-or even as list of hosts to ssh or FTP to.
+that doesn't have one, but needs to take arguments, that can be
+selected from list. For example one can use it as an adress book
+program in connection with mutt, or as a phone-book with sms-sending
+software, or even as list of hosts to ssh or FTP to.
 
 %description -l pl
 Otak zosta³ zaprojektowany jako interfejs graficzny dla programów,
@@ -53,7 +53,7 @@ install *.desktop $RPM_BUILD_ROOT%{_desktopdir}
 %clean
 rm -rf $RPM_BUILD_ROOT
 
-%files 
+%files
 %defattr(644,root,root,755)
 %doc README AUTHORS ABOUT{,-pl} BUGS-pl THANKS TODO-pl NEWS
 %attr(755,root,root) %{_bindir}/*
@@ -62,4 +62,4 @@ rm -rf $RPM_BUILD_ROOT
 %{_mandir}/man*/*.*
 %lang(pl) %{_mandir}/pl/man*/*.*
 %dir %{_sysconfdir}/%{name}
-%config(noreplace) %verify(not md5 size mtime) %{_sysconfdir}/%{name}/*
+%config(noreplace) %verify(not md5 mtime size) %{_sysconfdir}/%{name}/*
