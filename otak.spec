@@ -57,7 +57,7 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc README AUTHORS ABOUT{,-pl} BUGS-pl THANKS TODO-pl NEWS
 %attr(755,root,root) %{_bindir}/*
-%{_desktopdir}/*
+%{_desktopdir}/*.desktop
 %{_pixmapsdir}/*
 %{_mandir}/man*/*.*
 %lang(pl) %{_mandir}/pl/man*/*.*
