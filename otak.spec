@@ -1,5 +1,5 @@
 Summary:	Visual interface to programs
-Summary(pl):	Tekstowy interfejs dla programów
+Summary(pl.UTF-8):   Tekstowy interfejs dla programÃ³w
 Name:		otak
 Version:	1.3.4
 Release:	3
@@ -23,13 +23,13 @@ selected from list. For example one can use it as an adress book
 program in connection with mutt, or as a phone-book with sms-sending
 software, or even as list of hosts to ssh or FTP to.
 
-%description -l pl
-Otak zosta³ zaprojektowany jako interfejs graficzny dla programów,
-które go nie posiadaj±, ale wymagaj± argumentu, który mo¿e byæ wybrany
-z listy. Przyk³adowo: Mo¿na powi±zaæ otak z muttem i u¿ywaæ jako
-ksi±¿ki adresowej, albo powi±zaæ go z sms-em i u¿ywaæ jako ksi±¿ki
-"smsowej", mo¿na te¿ np. powi±zaæ otaka z komend± ssh (czy FTP) i
-nawi±zywaæ po³±czenia z gromadzonymi hostami.
+%description -l pl.UTF-8
+Otak zostaÅ‚ zaprojektowany jako interfejs graficzny dla programÃ³w,
+ktÃ³re go nie posiadajÄ…, ale wymagajÄ… argumentu, ktÃ³ry moÅ¼e byÄ‡ wybrany
+z listy. PrzykÅ‚adowo: MoÅ¼na powiÄ…zaÄ‡ otak z muttem i uÅ¼ywaÄ‡ jako
+ksiÄ…Å¼ki adresowej, albo powiÄ…zaÄ‡ go z sms-em i uÅ¼ywaÄ‡ jako ksiÄ…Å¼ki
+"smsowej", moÅ¼na teÅ¼ np. powiÄ…zaÄ‡ otaka z komendÄ… ssh (czy FTP) i
+nawiÄ…zywaÄ‡ poÅ‚Ä…czenia z gromadzonymi hostami.
 
 %prep
 %setup -q
