@@ -1,5 +1,5 @@
 Summary:	Visual interface to programs
-Summary(pl.UTF-8):   Tekstowy interfejs dla programów
+Summary(pl.UTF-8):	Tekstowy interfejs dla programów
 Name:		otak
 Version:	1.3.4
 Release:	3
