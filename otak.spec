@@ -12,7 +12,7 @@ Patch0:		%{name}-desktop.patch
 URL:		http://otak.k-k.pl/
 BuildRequires:	autoconf
 BuildRequires:	automake
-BuildRequires:	gettext-devel
+BuildRequires:	gettext-tools
 BuildRequires:	ncurses-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
